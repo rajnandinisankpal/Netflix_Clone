@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="./nextflix.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar__brand">
+                <img src="./images/netflix-logo-0.png" alt="Netflix Logo" class="navbar__logo">
+            </div>
+            <div class="nav__items">
+                <div class="nav__item">
+                    <div class="dropdown__container">
+                        <i class="fas fa-globe"></i>
+                        <select name="languages" id="languagesSelect" class="language_drop_down">
+                            <option value="english" selected style="color: black;">English</option>
+                            <option value="hindi" style="color: black;">हिन्दी </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="nav__item">
+                    <button class="singin__button">
+                        <a href="signIn.html" style="text-decoration: none; color: black;"><b>साइन इन करें</b></a>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero_bg_img_container">
+                <div class="hero-container">
+                    <img src="./images/background_img.png" alt="background_img" class="hero_bg_img">
+                    <div class="overlay"></div>
+                    <div class="content"></div>
+                </div>
+            </div>
+
+            <div class="hero_card">
+                <h1 style="font-size: 50px;">अनगिनत फिल्में, टीवी <br> शो और बहुत कुछ</h1>
+                <p style="font-size: 23px;">₹149 से शुरू। कभी भी रद्द करें।</p>
+                <p style="padding-top: 15px;">देखने के लिए तैयार हैं? अपनी सदस्यता शुरू या फिर से शुरू करने के लिए अपना ईमेल दर्ज करें।</p>
+
+                <div class="email_btn_container">
+                    <div class="email_form_container">
+                        <div class="form_container">
+                            <input type="email" class="input" placeholder=" ">
+                            <label for="email" class="email_label">ईमेल पता</label>
+                        </div>
+                    </div>
+
+                    <button class="get_started" style="font-size: 15px;"><h2>शुरू करें <i class="fa fa-chevron-right"></i></h2></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trending Now Section -->
+        <section class="trending-section">
+           
+        
+           
+
+            <h2 class="trending-title">अभी ट्रेंड कर रहा है</h2>
+            <div class="carousel-container">
+                <button class="scroll-button scroll-left">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="trending-carousel">
+
+                    <div class="trending-item">
+                        <div class="number" style="color:#dc030f;">1</div>
+                        <img src="./images/chhava.jpg" alt="Chaava">
+                    </div>
+                    <div class="trending-item">
+
+                        
+                        <div class="number" style="color:#dc030f;">2</div>
+                        <img src="./images/deva1.jpg" alt="Deva">
+                        
+                    </div>
+                    <div class="trending-item">
+                        <div class="number" style="color:#dc030f;">3</div>
+                        <img src="./images/dragon.jpg" alt="Dragon">
+                       
+                    </div>
+                    <div class="trending-item">
+                        <div class="number" style="color:#dc030f;">4</div>
+                        <img src="./images/pushpa2.jpg" alt="Movie 3">
+                        
+                    </div>
+                    <div class="trending-item">
+                        <div class="number" style="color:#dc030f;">5</div>
+                        <img src="./images/officer.jpg" alt="Officer">
+                        
+                    </div>
+                   
+                    <div class="trending-item">
+                        <div class="number" style="color:#dc030f;">6</div>
+                        <img src="./images/squid_game.jpg" alt="Squid Game">
+                        
+                    </div>
+                    <div class="trending-item">
+                        <div class="number" style="color:#dc030f;">7</div>
+                        <img src="./images/khakee.jpg" alt="Khakee">
+                        
+                    </div>
+                    <div class="trending-item">
+                        <div class="number" style="color:#dc030f;">8</div>
+                        <img src="./images/vidaamuyarchi.jpg" alt="vidaamuyarchi">
+                        
+                    </div>
+                    <div class="trending-item">
+                        <div class="number" style="color:#dc030f;">9</div>
+                        <img src="./images/thandel.jpg" alt="thandel">
+                        
+                    </div>
+                    <div class="trending-item">
+                        <div class="number" style="color:#dc030f;">10</div>
+                        <img src="./images/emergency.jpg" alt="emergency">
+                        
+                    </div>
+                </div>
+                <button class="scroll-button scroll-right">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="reasons-section">
+            <h2 class="reasons-title">शामिल होने के और कारण</h2>
+            <div class="reasons-container">
+                <div class="reasons-row">
+                    <div class="reason-card">
+                        <div class="reason-title">अपने टीवी पर आनंद लें</div>
+                        <div class="reason-text">स्मार्ट टीवी, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray प्लेयर और अन्य पर देखें।</div>
+                        <div class="reason-icon"><i class="fas fa-tv"></i></div>
+                    </div>
+                    <div class="reason-card">
+                        <div class="reason-title">ऑफ़लाइन देखने के लिए अपने शो डाउनलोड करें</div>
+                        <div class="reason-text">अपने पसंदीदा शो को आसानी से सहेजें और हमेशा कुछ देखने को पाएं।</div>
+                        <div class="reason-icon"><i class="fas fa-download"></i></div>
+                    </div>
+                    <div class="reason-card">
+                        <div class="reason-title">हर जगह देखें</div>
+                        <div class="reason-text">अपने फ़ोन, टैबलेट, लैपटॉप और टीवी पर अनलिमिटेड फिल्में और शो स्ट्रीम करें।</div>
+                        <div class="reason-icon"><i class="fas fa-mobile-alt"></i></div>
+                    </div>
+                    <div class="reason-card">
+                        <div class="reason-title">बच्चों के लिए प्रोफ़ाइल बनाएं</div>
+                        <div class="reason-text">बच्चों को उनके पसंदीदा किरदारों के साथ रोमांच पर भेजें - एक सुरक्षित और उनके लिए बने स्थान में।</div>
+                        <div class="reason-icon"><i class="fas fa-child"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq_list_container">
+            <h1 class="faq_heading">अक्सर पूछे जाने वाले सवाल</h1>
+
+            <div class="faq_list">
+                <div class="faq_accordian">
+                    <button class="faq_title_btn"><h3>Netflix क्या है?</h3><span class="plus_icon">+</span></button>
+                    <div class="faq_visible_faq_closed">
+                        <p class="faq_para">Netflix एक स्ट्रीमिंग सेवा है जो टीवी शो, फिल्में, ऐनिमे, डॉक्यूमेंट्री और बहुत कुछ प्रदान करती है।</p>
+                        <p class="faq_para">आप जब चाहें, जितना चाहें देख सकते हैं, बिना किसी विज्ञापन के – सिर्फ एक मासिक शुल्क में।</p>
+                    </div>
+                </div>
+                <!-- Other FAQs translated similarly -->
+            </div>
+        </section>
+
+        <div class="mail_card">
+            <p style="padding-top: 15px;">देखने के लिए तैयार हैं? अपनी सदस्यता शुरू या फिर से शुरू करने के लिए अपना ईमेल दर्ज करें।</p>
+            <div class="email_btn_container">
+                <div class="email_form_container">
+                    <div class="form_container">
+                        <input type="email" class="input" placeholder=" ">
+                        <label for="email" class="email_label">ईमेल पता</label>
+                    </div>
+                </div>
+                <button class="get_started" style="font-size: 15px;"><h2>शुरू करें <i class="fa fa-chevron-right"></i></h2></button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="call">
+            <p id="callNumber">कोई सवाल है? कॉल करें <a href="#">000-800-040-1843</a></p>
+        </div>
+        <div class="footer_row_1">
+            <div class="col_1">
+                <p><u>सामान्य प्रश्न</u></p><br>
+                <p><u>निवेशक संबंध</u></p><br>
+                <p><u>गोपनीयता</u></p><br>
+                <p><u>स्पीड टेस्ट</u></p>
+            </div>
+            <div class="col_2">
+                <p><u>सहायता केंद्र</u></p><br>
+                <p><u>नौकरियां</u></p><br>
+                <p><u>कुकी प्राथमिकताएं</u></p><br>
+                <p><u>कानूनी सूचना</u></p>
+            </div>
+            <div class="col_3">
+                <p><u>खाता</u></p><br>
+                <p><u>देखने के तरीके</u></p><br>
+                <p><u>कॉर्पोरेट जानकारी</u></p><br>
+                <p><u>केवल Netflix पर</u></p>
+            </div>
+            <div class="col_4">
+                <p><u>मीडिया केंद्र</u></p><br>
+                <p><u>उपयोग की शर्तें</u></p><br>
+                <p><u>संपर्क करें</u></p>
+            </div>
+        </div>
+        <div class="footer_row_2">
+            <div class="dropdown__container" style="border:1px solid">
+                <i class="fas fa-globe"></i>
+                <select name="languages" id="languagesSelect" class="language_drop_down">
+                    <option value="english" style="color: black;">English</option>
+                    <option value="hindi" selected style="color: black;">हिन्दी</option>
+                </select>
+            </div>
+        </div>
+        <div class="footer_row_3">
+            <p style="margin-left: 7%; margin-top: 2%;">Netflix भारत</p>
+        </div>
+    </footer>
+    <!-- <script src="netflix.js"></script> -->
+</body>
+</html>
